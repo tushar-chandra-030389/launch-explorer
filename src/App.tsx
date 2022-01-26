@@ -1,7 +1,9 @@
 import React from "react";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import logo from "./logo.svg";
+import { ROUTES } from "routes";
+import Launches from "pages/Launches";
+
 import "./App.css";
 
 import Layout from "templates/Layout";
@@ -13,7 +15,9 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Layout />} />
+          <Route path="/" element={<Layout />}>
+            <Route path={ROUTES.LAUNCHES} element={<Launches />} />
+          </Route>
         </Routes>
       </BrowserRouter>
     </QueryClientProvider>

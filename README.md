@@ -1,4 +1,34 @@
-# Getting Started with Create React App
+# Launch explorer
+
+## Task completed
+
+1. As a user, when I open the app, I want to see all the launches for the next 3 months, plotted on
+   a map or globe.
+
+2. As a user, I want to be able to select a start date and an end date so I can filter the launches
+   according to my selection.
+
+3. As a user, I want to receive feedback when the app is loading so that I know that when I change
+   something in the UI, something is being loaded
+
+4. As a user, I want to be able to filter the launches based on the agencies that are participating in
+   the launches that are relevant to my selection of start and end date.
+
+## Architecture used
+
+1. Files are segregated using atom/molecule/organisms/template/pages pattern.
+2. To fetch APi date react query is used.
+3. UT is added using React testing library and jest.
+4. React router dom for routing.
+5. Layout is responsive, but the app as whole isn't.
+
+## Enhancements required
+
+1. More UT coverage, I was able to add only 2.
+2. Debounce on filter changes.
+3. Better UI for loader.
+4. State management is done in template component which is not correct.
+5. Make the app responsive.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -8,39 +38,4 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
 ### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
